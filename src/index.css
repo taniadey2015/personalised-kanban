@@ -1,0 +1,48 @@
+:root {
+  --ink: #2f2614;
+  --panel: #fff8e8;
+  --line: #e3d7bc;
+  --page: #f5ead3;
+  font-family: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--ink);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 8% 10%,
+      rgba(255, 208, 128, 0.55),
+      transparent 26%
+    ),
+    radial-gradient(
+      circle at 92% 0%,
+      rgba(170, 219, 180, 0.48),
+      transparent 28%
+    ),
+    var(--page);
+}
+
+#root {
+  width: min(1280px, 100%);
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
